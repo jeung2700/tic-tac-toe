@@ -8,5 +8,30 @@
   </head>
   <body>
     <script src="script.js" defer></script>
+    <div class="container">
+      <h1>Tic Tac Toe</h1>
+
+      <div class="setup">
+        <div class="input-group">
+          <label for="player1-name">Player 1 (X):</label>
+          <input type="text" id="player1-name" value="Player 1" />
+        </div>
+        <div class="input-group">
+          <label for="player2-name">Player 2 (O):</label>
+          <input type="text" id="player2-name" value="Player 2" />
+        </div>
+        <button id="start-btn">Start Game</button>
+      </div>
+
+      <div class="game-area hidden">
+        <div class="turn-indicator" id="turn-indicator"></div>
+        <div class="grid-container"></div>
+        <div class="result-display hidden" id="result-display"></div>
+        <div class="game-buttons">
+          <button id="restart-btn">Play Again</button>
+          <button id="back-btn" class="btn-secondary">Back to Setup</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
